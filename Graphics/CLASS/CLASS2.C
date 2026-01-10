@@ -4,29 +4,22 @@
 void main()
 {
     int gd = DETECT, gm;
+    initgraph(&gd, &gm, "C:\\Turboc3\\BGI");
 
-    // Initialize graphics mode
-    initgraph(&gd, &gm, "C:\\TC\\BGI");
+    /* Triangle */
+    line(250, 150, 350, 150);
+    line(250, 150, 300, 100);
+    line(300, 100, 350, 150);
 
-    // Draw a triangle
-     line(300, 250, 440, 250);
-     line(300, 250, 320, 180);
-     line(320, 180, 440, 250);
-    circle(210,200,50);
+    /* Circle */
+    circle(300, 230, 40);
 
-     line(300, 350, 440, 350);
+    /* Square */
+    rectangle(260, 280, 340, 360);
 
-     line(170, 300, 260, 300);
-     line(170, 400, 260, 400);
-     line(170, 300, 170, 400);
-     line(260, 300, 260, 400);
+    /* Line */
+    line(200, 400, 400, 400);
 
-
-
-    //ellipse(320,210,0,360,150,80);
-    // Wait for key press
     getch();
-
-    // Close graphics mode
     closegraph();
 }
