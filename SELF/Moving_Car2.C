@@ -1,4 +1,4 @@
-
+// code by Ajay
 #include<stdio.h>
 #include<conio.h>
 #include<dos.h>
